@@ -1,0 +1,20 @@
+{
+  "name": "intro-unit-tesing",
+  "version": "1.0.0",
+  "description": "Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "js",
+    "jest",
+    "unit",
+    "testing"
+  ],
+  "author": "Denis",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.5.3"
+  }
+}
