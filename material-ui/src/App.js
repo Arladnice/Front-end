@@ -6,7 +6,7 @@ function App() {
   return (
 		<div className="App">
 			<header className="App-header">
-				<Button variant="contained" >Hello</Button>
+				<Button variant="contained" color="primary" >Hello</Button>
 				<img src={logo} className="App-logo" alt="logo" />
 			</header>
 		</div>
