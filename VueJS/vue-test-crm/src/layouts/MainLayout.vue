@@ -9,11 +9,11 @@
       </div>
     </main>
 
-    <div class="fixed-action-btn">
-      <router-link to="/record" class="btn-floating btn-large blue">
-        <i class="large material-icons">add</i>
-      </router-link>
-    </div>
+<!--    <div class="fixed-action-btn">-->
+<!--      <router-link to="/record" class="btn-floating btn-large blue">-->
+<!--        <i class="large material-icons">add</i>-->
+<!--      </router-link>-->
+<!--    </div>-->
   </div>
 </template>
 
@@ -25,6 +25,11 @@
       data:() => ({
           isOpen: true,
       }),
+      async mounted() {
+          if (!Object.keys(this.$store.getters.info).length) {
+              await this.$store.dispatch('fetchInfo')
+          }
+      },
       components: {
           // eslint-disable-next-line vue/no-unused-components
           Navbar, Sidebar
