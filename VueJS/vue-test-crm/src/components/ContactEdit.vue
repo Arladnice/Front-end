@@ -14,7 +14,7 @@
               :value="c.id"
             >{{c.name}}</option>
           </select>
-          <label>Выберите номер</label>
+          <label>Выберите контакт</label>
         </div>
 
         <div class="input-field">
