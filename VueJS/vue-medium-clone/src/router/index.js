@@ -15,11 +15,6 @@ const routes = [
     name: 'register',
     component: Register
   },
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
 ]
 
 const router = new VueRouter({
